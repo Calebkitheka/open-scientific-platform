@@ -11,3 +11,10 @@
 - ✅ Added REPL `test` command with automated verification
 - 📝 Notes: `data[r * cols + c]` avoids pointer indirection overhead. `vector<vector>` is cache-unfriendly for scientific workloads.
 - 🚧 Day 4: Basic expression parsing (`A = [1,2;3,4]`), REPL variable storage, tokenization.
+
+## Day 4 (2026-05-23)
+- ✅ Implemented matrix literal parser: `[1, 2; 3, 4]`
+- ✅ Added workspace symbol table (`unordered_map`) for variable storage
+- ✅ Safe REPL with `try/catch` recovery & identifier validation
+- 📝 Notes: `std::stringstream` + `getline` with delimiters is cleaner than manual char iteration for CSV-like parsing. Never let parser crashes kill the shell.
+- 🚧 Day 5: Binary expression evaluation (`A + B`, `A * B`), operator precedence basics, runtime error handling.
