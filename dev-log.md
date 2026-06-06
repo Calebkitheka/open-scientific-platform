@@ -18,3 +18,10 @@
 - ✅ Safe REPL with `try/catch` recovery & identifier validation
 - 📝 Notes: `std::stringstream` + `getline` with delimiters is cleaner than manual char iteration for CSV-like parsing. Never let parser crashes kill the shell.
 - 🚧 Day 5: Binary expression evaluation (`A + B`, `A * B`), operator precedence basics, runtime error handling.
+
+## Day 5 (2026-05-24)
+- ✅ Built lexer/tokenizer for identifiers, numbers, + - *
+- ✅ Implemented left-to-right expression evaluator with scalar/matrix dispatch
+- ✅ Added MATLAB-style `ans` auto-capture for direct expressions
+- 📝 Notes: Treating scalars as 1x1 matrices simplifies type system. Full matrix-matrix multiplication (dot product) requires nested loops & will be Day 6. Left-associative evaluation avoids complex AST for now.
+- 🚧 Day 6: True matrix multiplication (dot product), operator precedence (`*` before `+`), basic error recovery improvements.
