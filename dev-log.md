@@ -25,3 +25,10 @@
 - ✅ Added MATLAB-style `ans` auto-capture for direct expressions
 - 📝 Notes: Treating scalars as 1x1 matrices simplifies type system. Full matrix-matrix multiplication (dot product) requires nested loops & will be Day 6. Left-associative evaluation avoids complex AST for now.
 - 🚧 Day 6: True matrix multiplication (dot product), operator precedence (`*` before `+`), basic error recovery improvements.
+
+## Day 6 (2026-05-25)
+- ✅ Implemented O(N^3) matrix-matrix dot product with inner-dimension validation
+- ✅ Built recursive descent parser (factor → term → expression) for correct precedence
+- ✅ Added matrix subtraction & cleaned parser architecture
+- 📝 Notes: Recursive descent is the foundation of all modern language parsers. `*` binds tighter than `+/-` naturally via call hierarchy. Dimension checks prevent silent numerical corruption.
+- 🚧 Day 7: Matrix transposition, determinant (2x2/3x3), basic error recovery, workspace save/load (JSON).
