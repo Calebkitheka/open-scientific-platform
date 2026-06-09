@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(scishell src/main.cpp src/matrix.cpp)
-target_include_directories(scishell PRIVATE include)
+target_include_directories(scishell PRIVATE third_party)
 
 if(MSVC)
     target_compile_options(scishell PRIVATE /W4 /WX)

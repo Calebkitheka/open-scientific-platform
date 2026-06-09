@@ -15,4 +15,6 @@ struct Matrix {
     Matrix operator-(const Matrix& other) const;
     Matrix operator*(const Matrix& other) const;
     void print() const;
+    Matrix transpose() const;
+    double determinant() const;
 };
